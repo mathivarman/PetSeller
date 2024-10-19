@@ -1,12 +1,12 @@
 import React from 'react';
-import img1 from './../src/sellers/sheba-logo.png';
-import img2 from './../src/sellers/whiskas-logo.jpg';
-import img3 from './../src/sellers/bakers-logo.png';
-import img4 from './../src/sellers/felix-logo.png';
-import img5 from './../src/sellers/good-boy-logo.png';
-import img6 from './../src/sellers/butchers-logo.png';
-import img7 from './../src/sellers/pedigree-logo.png';
-import img8 from './../src/img/sellersdogs.png';
+import img1 from './../sellers/sheba-logo.png';
+import img2 from './../sellers/whiskas-logo.jpg';
+import img3 from './../sellers/bakers-logo.png';
+import img4 from './../sellers/felix-logo.png';
+import img5 from './../sellers/good-boy-logo.png';
+import img6 from './../sellers/butchers-logo.png';
+import img7 from './../sellers/pedigree-logo.png';
+import img8 from './../img/sellersdogs.png';
 
 export default function PetSellersSection() {
   return (

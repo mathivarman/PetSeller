@@ -10,10 +10,10 @@ export default function Navbar() {
           <h1 className="text-2xl font-semibold">Monito</h1>
           <div className="hidden md:flex items-center space-x-4">
             <ul className="flex space-x-4">
-              <li><a href="#" className="text-blue-500 hover:text-blue-700">Home</a></li>
-              <li><a href="#" className="text-blue-500 hover:text-blue-700">Category</a></li>
-              <li><a href="#" className="text-blue-500 hover:text-blue-700">About</a></li>
-              <li><a href="#" className="text-blue-500 hover:text-blue-700">Contact</a></li>
+              <li><a href="#" className="text-blue-900 hover:text-blue-900">Home</a></li>
+              <li><a href="#" className="text-blue-900 hover:text-blue-700">Category</a></li>
+              <li><a href="#" className="text-blue-900 hover:text-blue-700">About</a></li>
+              <li><a href="#" className="text-blue-900 hover:text-blue-700">Contact</a></li>
             </ul>
             <div className="flex space-x-2">
               <div className="relative">
@@ -23,10 +23,10 @@ export default function Navbar() {
                 <input
                   type="text"
                   placeholder="Search something here"
-                  className="pl-10 pr-4 py-2 w-full border rounded-md"
+                  className="pl-10 pr-4 py-2 w-full border rounded-full"
                 />
               </div>
-              <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+              <button className="bg-blue-900 text-white px-4 py-2 rounded-full hover:bg-blue-600">
                 Join the community
               </button>
             </div>

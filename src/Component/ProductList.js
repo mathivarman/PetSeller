@@ -16,6 +16,7 @@ export default function ProductList() {
       }
       const data = await response.json();
       setProducts(prevProducts => [...prevProducts, ...data]);
+      console.log(products)
       setLoading(false);
     } catch (error) {
       setError(error.message);
@@ -49,7 +50,7 @@ export default function ProductList() {
         <div className="flex justify-between items-center mb-8">
           <div>
             <h2 className="text-2xl font-semibold">Hard to choose the right product?</h2>
-            <h1 className="text-4xl font-bold">PRODUCTS</h1>
+            <h1 className="text-4xl font-bold text-blue-800">Our Procucts</h1>
           </div>
           {displayedProducts.length < products.length && (
             <button
