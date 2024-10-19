@@ -24,7 +24,7 @@ const PetKnowledgeCards = () => {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto py-10 bg-yellow-200">
+    <section className="max-w-7xl mx-auto py-10 bg-yellow-100">
       {/* Header Section */}
       <div className="flex justify-between items-center mb-6">
         {/* Left Label */}

@@ -47,7 +47,7 @@ const PetList = () => {
   }
 
   return (
-    <section className="bg-yellow-200 py-16">
+    <section className="bg-yellow-20 py-16">
       <div className="container mx-auto">
         {/* Flex container to align the label and button */}
         <div className="flex justify-between items-center mb-8">
@@ -74,9 +74,22 @@ const PetList = () => {
           {pets.map(pet => (
             <div key={pet.id} className="bg-white shadow-lg rounded-lg p-4">
               <img src={pet.image} alt={pet.name} className="w-full rounded-lg" />
-              <h3 className="text-lg font-semibold mt-4">#{pet.id} - {pet.name}</h3>
-              <p className="text-sm text-gray-600">Available for adoption</p>
-              <button className="bg-blue-600 text-white py-2 px-4 rounded mt-4 hover:bg-blue-700">Adopt Now</button>
+
+              {/* Aligning ID and Name in the same level */}
+              <div className="flex justify-between items-center mt-2">
+                <h3 className="font-semibold">{pet.id}-{pet.breed}</h3>
+              </div>
+
+              {/* Aligning Gender and Age in the same level */}
+              <div className="flex justify-between items-center mt-2">
+                <p>Gene:{pet.gender}</p>
+                <p>Age:{pet.age}</p>
+              </div>
+
+              {/* Aligning Price in the same level */}
+              <div className="flex justify-between items-center mt-4">
+                <h5 className="text-lg font-semibold">{pet.price}</h5>
+              </div>
             </div>
           ))}
         </div>
@@ -86,41 +99,3 @@ const PetList = () => {
 };
 
 export default PetList;
-
-
-
-// import React from 'react';
-
-// const PetList = () => {
-//   const pets = [
-//     { id: 1, name: 'Pomeranian White', image: 'https://via.placeholder.com/150' },
-//     { id: 2, name: 'Poodle Toy', image: 'https://via.placeholder.com/150' },
-//     { id: 3, name: 'Poodle Toy', image: 'https://via.placeholder.com/150' },
-//     { id: 4, name: 'Poodle Toy', image: 'https://via.placeholder.com/150' },
-//     { id: 5, name: 'Poodle Toy', image: 'https://via.placeholder.com/150' },
-//     { id: 6, name: 'Poodle Toy', image: 'https://via.placeholder.com/150' },
-//     { id: 7, name: 'Poodle Toy', image: 'https://via.placeholder.com/150' },
-//     { id: 8, name: 'Poodle Toy', image: 'https://via.placeholder.com/150' },
-//     // Add more pets here
-//   ];
-
-//   return (
-//     <section className="py-16">
-//       <div className="container mx-auto">
-//         <h2 className="text-3xl font-bold text-center mb-8">Take A Look At Some Of Our Pets</h2>
-//         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-//           {pets.map(pet => (
-//             <div key={pet.id} className="bg-white shadow-lg rounded-lg p-4">
-//               <img src={pet.image} alt={pet.name} className="w-full rounded-lg" />
-//               <h3 className="text-lg font-semibold mt-4">#{pet.id} - {pet.name}</h3>
-//               <p className="text-sm text-gray-600">Available for adoption</p>
-//               <button className="bg-blue-600 text-white py-2 px-4 rounded mt-4 hover:bg-blue-700">Adopt Now</button>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default PetList;

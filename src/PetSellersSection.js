@@ -10,7 +10,7 @@ import img8 from './../src/img/sellersdogs.png';
 
 export default function PetSellersSection() {
   return (
-    <div className="bg-yellow-200 container mx-auto px-4 py-8">
+    <div className="bg-yellow-20 container mx-auto px-4 py-8">
       <div className="flex flex-col sm:flex-row justify-between items-center mb-8">
         <h2 className="text-2xl font-bold text-[#0e2c4b] mb-4 sm:mb-0">Proud to be part of Pet Sellers</h2>
         <button className="px-4 py-2 border border-[#0e2c4b] text-[#0e2c4b] rounded-full hover:bg-[#0e2c4b] hover:text-white transition-colors">
