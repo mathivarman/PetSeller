@@ -49,7 +49,7 @@ export default function ProductList() {
       <div className="container mx-auto">
         <div className="flex justify-between items-center mb-8">
           <div>
-            <h2 className="text-2xl font-semibold">Hard to choose the right product?</h2>
+            <h2 className="text-2xl font-semibold text-blue-900">Hard to choose the right product?</h2>
             <h1 className="text-4xl font-bold text-blue-800">Our Procucts</h1>
           </div>
           {displayedProducts.length < products.length && (
@@ -70,14 +70,11 @@ export default function ProductList() {
                 <h3 className="text-lg font-semibold">{product.id} - {product.name}</h3>
                 <p className="text-lg font-semibold mt-2">{product.product} size-{product.size} {product.price}</p>
                 <div className="mt-2 mb-4">
-                  <span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">
+                  <span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold md:rounded-full mr-2 px-2.5 py-0.5 rounded">
                   🎁+{product.description || 'Special Offer'}
                   </span>
                 </div>
               </div>
-              {/* <button className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300 ease-in-out w-full mt-auto">
-                Buy Now
-              </button> */}
             </div>
           ))}
         </div>

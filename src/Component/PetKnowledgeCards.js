@@ -24,16 +24,12 @@ const PetKnowledgeCards = () => {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto py-10 bg-yellow-10">
-      {/* Header Section */}
+    <section className="max-w-7xl mx-auto py-10 px-4 md:px-8 my-8 bg-yellow-10">
       <div className="flex justify-between items-center mb-6">
-        {/* Left Label */}
         <div>
           <p className="text-xl font-semibold">You already know?</p>
           <h2 className="text-3xl font-bold">Useful Pet Knowledge</h2>
         </div>
-
-        {/* View More Button */}
         <a
           href="https://www.petmd.com/dog/general-health"
           target="_blank"
@@ -43,8 +39,6 @@ const PetKnowledgeCards = () => {
           View more <span className="ml-2">&gt;</span>
         </a>
       </div>
-
-      {/* Card Grid Section */}
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {cards.map((card, index) => (
           <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden">

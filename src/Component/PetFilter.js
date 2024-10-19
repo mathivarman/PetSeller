@@ -12,7 +12,7 @@ const PetFilter = () => {
     gender: '',
   });
 
-  // Fetch pets from the backend API
+  // Fetch backend API
   const fetchPets = async () => {
     try {
       const response = await fetch('https://monitor-backend-rust.vercel.app/api/pets');

@@ -7,6 +7,7 @@ import img5 from './../sellers/good-boy-logo.png';
 import img6 from './../sellers/butchers-logo.png';
 import img7 from './../sellers/pedigree-logo.png';
 import img8 from './../img/sellersdogs.png';
+import { IoPlayCircleOutline } from "react-icons/io5";
 
 export default function PetSellersSection() {
   return (
@@ -43,11 +44,12 @@ export default function PetSellersSection() {
               It will love you back unconditionally.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-6 py-3 bg-[#0e2c4b] text-white rounded-full hover:bg-[#1a3a5c] transition-colors">
+            <button className="px-6 py-3 bg-[#0e2c4b] text-white rounded-full hover:bg-[#1a3a5c] transition-colors">
                 Explore Now
               </button>
-              <button className="px-6 py-3 border border-[#0e2c4b] text-[#0e2c4b] rounded-full hover:bg-[#0e2c4b] hover:text-white transition-colors">
-                View Intro ▶
+              <button className="flex items-center px-6 py-3 border border-[#0e2c4b] text-[#0e2c4b] rounded-full hover:bg-[#0e2c4b] hover:text-white transition-colors">
+                View Intro 
+                <IoPlayCircleOutline className="ml-2" />
               </button>
             </div>
           </div>

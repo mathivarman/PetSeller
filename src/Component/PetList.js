@@ -4,10 +4,10 @@ const PetList = () => {
   const [pets, setPets] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [page, setPage] = useState(1); // Tracks current page for fetching more
-  const [hasMore, setHasMore] = useState(true); // To check if there are more pets to load
+  const [page, setPage] = useState(1);
+  const [hasMore, setHasMore] = useState(true); 
 const [slice,setSlice]=useState(8);
-  // Fetch pets from the backend API
+  // Fetch backend API
   const fetchPets = async () => {
     try {
       const response = await fetch(`https://monitor-backend-rust.vercel.app/api/pets?page=${page}&limit=8`);
@@ -52,7 +52,7 @@ const [slice,setSlice]=useState(8);
         <div className="flex justify-between items-center mb-8">
          
           <div>
-            <p className="text-xl  font-semibold">What's new?</p>
+            <p className="text-xl  font-semibold text-blue-900">What's new?</p>
             <h2 className="text-3xl font-bold text-blue-800">TAKE A LOOK AT SOME OF OUR PETS</h2>
           </div>
 
@@ -68,7 +68,6 @@ const [slice,setSlice]=useState(8);
           )}
         </div>
 
-        {/* Pet List Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {pets.slice(0,slice).map(pet => (
             <div key={pet.id} className="bg-white shadow-lg rounded-lg p-4">
